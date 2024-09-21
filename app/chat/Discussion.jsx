@@ -5,7 +5,7 @@ const Discussion = () => {
   let responses = [
     "Great to see you today! How can I help?",
     "Generating more leads for your real estate listings can be approached through several effective strategies. Here are some key tips you can implement:Optimize Your Online Presence:nsure your listings are on all major real estate platforms (like Zillow, Realtor.com, etc.)",
-    "say 9wd",
+    "sorry i can't help you any more"
   ];
   const [inputValue, setInputValue] = useState("");
   const chat = useChatContext();

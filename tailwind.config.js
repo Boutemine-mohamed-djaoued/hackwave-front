@@ -32,11 +32,16 @@ module.exports = {
           to: {
             height: "0",
           },
+          "slide-in-from-left": {
+            "0%": { transform: "translateX(-100%)" },
+            "100%": { transform: "translateX(0)" },
+          },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "slide-in-from-left": "slide-in-from-left 0.3s ease-out",
       },
       fontSize: {
         250: "clamp(0.80rem, calc(0.785rem + 0.04vw), 0.92rem)",

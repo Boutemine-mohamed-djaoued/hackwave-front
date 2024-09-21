@@ -1,4 +1,4 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../../components/ui/Accordion";
 const SideInfo = () => {
   let FAQS = [
     { question: "Carte CIB", answer: "The Carte CIB is a bank card that allows customers to access banking services, make payments, and withdraw money from ATMs." },
@@ -24,12 +24,12 @@ const SideInfo = () => {
       <h3 className="font-semibold">FAQs</h3>
       {FAQS.map(({ question, answer }, index) => {
         return (
-          <Accordion type="single" collapsible>
-            <AccordionItem value="item-1">
-              <AccordionTrigger>{question}</AccordionTrigger>
-              <AccordionContent>{answer}</AccordionContent>
-            </AccordionItem>
-          </Accordion>
+            <Accordion type="single" collapsible>
+              <AccordionItem value="item-1">
+                <AccordionTrigger>{question}</AccordionTrigger>
+                <AccordionContent>{answer}</AccordionContent>
+              </AccordionItem>
+            </Accordion>
         );
       })}
     </div>

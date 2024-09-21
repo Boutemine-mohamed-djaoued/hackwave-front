@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -21,4 +20,47 @@ input {
 
 input::selection {
   background: transparent; /* Make selection background transparent */
+}
+
+@keyframes slide-in-from-left {
+  0% {
+    transform: translateX(-100%+5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-to-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%+5rem);
+  }
+}
+
+// Now ensure you have the classes for the animations:
+.animate-slide-in-from-left {
+  animation: slide-in-from-left 0.3s ease-out forwards;
+}
+
+.animate-slide-out-to-left {
+  animation: slide-out-to-left 0.3s ease-out forwards;
+}
+
+where(.side-nave:hover) .logout,
+.nav-text,
+.big-logo {
+  display: block !important;
+}
+
+.side-nav:not(:hover) .logout,
+.side-nav:not(:hover) .nav-text,
+.side-nav:not(:hover) .big-logo {
+  display: none !important;
+}
+
+.side-nav:hover .small-logo {
+  display: none !important;
 }

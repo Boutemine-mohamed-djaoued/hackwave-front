@@ -1,9 +1,9 @@
-import Header from "../layout/Header";
+import SideNav from "../layout/SideNav";
 export default function RootLayout({ children }) {
   return (
-    <div className="max-w-screen-xl flex flex-col min-h-[100vh] mx-auto px-4 sm:px-6 lg:px-8">
-      <Header></Header>
-      {children}
+    <div>
+      <SideNav></SideNav>
+      <div className="ms-20">{children}</div>
     </div>
   );
 }

@@ -32,7 +32,7 @@ const Header = () => {
           <MainButton role="primary" onClick={console.log("he")}>
             Get a New Card{" "}
           </MainButton>
-          <MainButton role="secondary" onClick={console.log("me")}>
+          <MainButton role="secondary" href="/login">
             Sign In
           </MainButton>
         </div>
