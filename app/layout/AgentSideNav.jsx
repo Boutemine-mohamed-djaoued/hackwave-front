@@ -10,10 +10,8 @@ import { useState } from "react";
 
 const SideNav = () => {
   const options = [
-    { url: "/client", icon: <TiHome size={35} />, tag: "Dashboard" },
-    { url: "/client/transactions", icon: <PiCardsFill size={35} />, tag: "Transactions" },
-    { url: "/client/help-center", icon: <FaHandshakeAngle size={35} />, tag: "Help Center" },
-    { url: "/client", icon: <TiTicket size={35} />, tag: "Ticket" },
+    { url: "/agent", icon: <TiHome size={35} />, tag: "Dashboard" },
+    { url: "/agent/tickets", icon: <TiTicket size={35} />, tag: "tickets" },
   ];
 
   const [open, setOpen] = useState(false);
